@@ -137,7 +137,7 @@ class App(tk.Tk):
         )
 
     def simpan_hasil(self):
-        if self.img_he is None or self.img_clahe is None:
+        if self.img_original is None or self.img_he is None or self.img_clahe is None:
             messagebox.showwarning("Belum Ada Hasil", "Proses gambar terlebih dahulu.")
             return
 
